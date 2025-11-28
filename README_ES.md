@@ -27,7 +27,7 @@ keving.kpg@gmail.com
   - Incluye botón "Quick Follow-Up Call" para crear tareas de seguimiento
   - Ubicación: [Ir al directorio del LWC](force-app/main/default/lwc/engagementSummary/)
 
-    <img src="screenshoots/general/lwc-engagement-summary.png" alt="Lightning Web Component" width="600">
+    <img src="screenshoots/general/lws-engagement-summary.png" alt="Lightning Web Component" width="600">
 
 
 ### Clases Apex
