@@ -25,7 +25,7 @@ keving.kpg@gmail.com
   - Includes a **Quick Follow-Up Call** button to create follow-up tasks  
   - Location: [Go to the LWC directory](force-app/main/default/lwc/engagementSummary/)
 
-    <img src="screenshoots/general/lwc-engagement-summary.png" alt="Engagement Object Model" width="600">
+    <img src="screenshoots/general/lws-engagement-summary.png" alt="Engagement Object Model" width="600">
 
 ### Apex Classes
 - **EngagementController**: Logic and data provider for the LWC  
