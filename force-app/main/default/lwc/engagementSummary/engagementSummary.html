@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="Engagement Summary" icon-name="custom:custom18">
+        <div class="slds-p-around_medium">
+            <template if:true={engagement.data}>
+                <p class="slds-m-bottom_small">
+                    <strong>Related Opportunity Amount: </strong>
+                    <template if:true={oppAmount}>
+                        <lightning-formatted-number value={oppAmount} format-style="currency" currency-code="USD"></lightning-formatted-number>
+                    </template>
+                    <template if:false={oppAmount}>
+                         No Opportunity Amount linked.
+                    </template>
+                </p>
+            </template>
+            
+            <template if:true={stats.data}>
+                <p><strong>Completed Tasks:</strong> {stats.data.completedTasks}</p>
+                <p><strong>Upcoming Events:</strong> {stats.data.upcomingEvents}</p>
+            </template>
+
+            <!-- cta -->
+             <div class="slds-m-top_medium">
+                <lightning-button 
+                    variant="brand" 
+                    label="Quick Follow-Up Call" 
+                    onclick={handleQuickFollowUp}
+                    disabled={isProcessing}>
+                </lightning-button>
+             </div>
+        </div>
+        
+        <template if:true={isProcessing}>
+             <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </template>
+    </lightning-card>
+</template>
